@@ -10,7 +10,6 @@ import {
 } from "lucide-react";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import Contact from "./Contact";
 
 const Profile = ({ contactRef, aboutRef }) => {
   const [user, setUser] = useState({});
@@ -52,7 +51,7 @@ const Profile = ({ contactRef, aboutRef }) => {
 
       {/* Name & Title */}
       <h1 className="text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] lg:text-[3rem] font-bold tracking-wide mb-4">
-        Hey, I'm {user.fullName || "User Loading..."}
+        Hi, I'm {user.fullName || "User Loading..."}
       </h1>
 
       <h1 className="text-tubeLight-effect text-[1.3rem] sm:text-[1.8rem] md:text-[2.2rem] lg:text-[2.5rem] tracking-[10px]">
@@ -85,12 +84,12 @@ const Profile = ({ contactRef, aboutRef }) => {
       {/* Buttons (GitHub & Resume) */}
       <div className="mt-6 flex flex-wrap gap-3 md:gap-5">
         {user.resume?.url && (
-          // <Link to={user.resume.url} target="_blank" rel="noopener noreferrer">
-          <Button className="w-32 flex items-center rounded-[30px]">
-            <ExternalLink />
-            <span>Resume</span>
-          </Button>
-          // </Link>
+          <Link to={user.resume.url} target="_blank" rel="noopener noreferrer">
+            <Button className="w-32 flex items-center rounded-[30px]">
+              <ExternalLink />
+              <span>Resume</span>
+            </Button>
+          </Link>
         )}
 
         <Button
@@ -102,7 +101,7 @@ const Profile = ({ contactRef, aboutRef }) => {
         </Button>
       </div>
 
-      {/* About Me */}
+      {/* About */}
       {user.aboutMe && (
         <p className="mt-8 text-lg tracking-wide text-gray-700 dark:text-gray-300">
           {user.aboutMe}
