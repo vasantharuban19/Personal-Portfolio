@@ -8,7 +8,7 @@ import toast from "react-hot-toast";
 
 const Contact = () => {
   const [senderName, setSenderName] = useState("");
-  const [senderPhoneNo, setSenderPhoneNo] = useState("");
+  const [senderEmail, setSenderEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
@@ -19,7 +19,7 @@ const Contact = () => {
     await axios
       .post(
         "https://portfolio-backend-rmjr.onrender.com/api/v1/message/send",
-        { senderName, senderPhoneNo, subject, message },
+        { senderName, senderEmail, subject, message },
         {
           withCredentials: true,
           headers: { "Content-Type": "application/json" },
@@ -28,7 +28,7 @@ const Contact = () => {
       .then((res) => {
         toast.success(res.data.message);
         setSenderName("");
-        setSenderPhoneNo("");
+        setSenderEmail("");
         setSubject("");
         setMessage("");
         setLoading(false);
@@ -73,12 +73,12 @@ const Contact = () => {
 
           <div className="flex flex-col gap-2">
             <Label className="text-lg text-gray-900 dark:text-white">
-              Phone No
+              Email
             </Label>
             <Input
-              value={senderPhoneNo}
-              onChange={(e) => setSenderPhoneNo(e.target.value)}
-              placeholder="Your Phone Number"
+              value={senderEmail}
+              onChange={(e) => setSenderEmail(e.target.value)}
+              placeholder="Your Email Address"
               className="p-3 rounded-lg border-gray-300 dark:border-gray-700"
             />
           </div>
