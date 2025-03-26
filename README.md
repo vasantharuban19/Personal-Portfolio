@@ -1,6 +1,6 @@
 # 🚀 Personal Portfolio
 
-### Live Demo: [Portfolio Link]([https://my-portfolio-flame-two-94.vercel.app/])
+### Live Demo: [Portfolio Link](https://my-portfolio-flame-two-94.vercel.app/)
 
 ## 📌 Overview
 This is my **Personal Portfolio** website showcasing my skills, projects, and experience as a **Full Stack Developer**. Built using **React.js, Tailwind CSS, and Node.js**, it provides an interactive and smooth user experience.
@@ -12,6 +12,7 @@ This is my **Personal Portfolio** website showcasing my skills, projects, and ex
 - **Skills:** A list of my technical expertise in **MERN Stack**.
 - **My Software Apps:** A section listing the software applications I regularly use in my workflow.
 - **Contact Me:** Users can send messages directly via the contact form.
+- **Dark Mode & Light Mode Toggle:** Seamless theme switch for better user experience.
 - **Responsive Design:** Fully optimized for mobile and desktop devices.
 
 ## 🛠️ Tech Stack
@@ -23,8 +24,5 @@ This is my **Personal Portfolio** website showcasing my skills, projects, and ex
 
 ## 📷 Screenshots
 ### 🏠 Home Page
-![Home Page](https://your-image-link.com)
-
-### 📖 About Me
-![About Page](https://your-image-link.com)
+![Home Page](src/assets/HomePage.png)
 
