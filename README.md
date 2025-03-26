@@ -1,12 +1,30 @@
-# React + Vite
+# 🚀 Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Live Demo: [Portfolio Link]([https://my-portfolio-flame-two-94.vercel.app/])
 
-Currently, two official plugins are available:
+## 📌 Overview
+This is my **Personal Portfolio** website showcasing my skills, projects, and experience as a **Full Stack Developer**. Built using **React.js, Tailwind CSS, and Node.js**, it provides an interactive and smooth user experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 Features
+- **Home Page:** Introduction with name, profession, and a brief overview.
+- **About Me:** Details about my background, skills, and experience.
+- **Projects:** Showcases my best projects with live demos and GitHub links.
+- **Skills:** A list of my technical expertise in **MERN Stack**.
+- **My Software Apps:** A section listing the software applications I regularly use in my workflow.
+- **Contact Me:** Users can send messages directly via the contact form.
+- **Responsive Design:** Fully optimized for mobile and desktop devices.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
+- **Frontend:** React.js, Tailwind CSS, ShadCN
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB
+- **Email Handling:** Nodemailer (for Contact Me form)
+- **Deployment:** Vercel (Frontend), Render (Backend)
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📷 Screenshots
+### 🏠 Home Page
+![Home Page](https://your-image-link.com)
+
+### 📖 About Me
+![About Page](https://your-image-link.com)
+
